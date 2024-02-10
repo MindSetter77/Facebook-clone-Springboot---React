@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Century+Gothic&display=swap');
+
+.footer {
+    border-top: 3px solid #0077b6;
+    box-shadow: 0 0 10px #90e0ef;
+}
+
+.back{
+    background-color: rgb(15, 15, 15);;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+.test{height: 100px;}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Century+Gothic&display=swap');
+
+
+
+.title {
+    font-size: 24px; /* Zmień rozmiar czcionki na przykład 24 piksele */
+    font-weight: bold; /* Wzmocnij czcionkę */
+    text-transform: uppercase; /* Wyświetlaj tekst dużymi literami */
+    color: #0077b6; /* Zmień kolor tekstu na niebieski */
+    transition: color 0.3s ease; /* Dodaj płynne przejście zmiany koloru */
+    
+    /* Dodaj animację obracania */
+   
+  }
+
+.title:hover{
+    color: #90e0ef;
+}
+  
+ 
+
+.active{
+    text-shadow: 0px 0px 25px #03045e;
+    color: #4ee1ff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077b6;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid #00b4d8;
+    box-shadow: 0 0 10px #90e0ef; /* Dodaj złoty cień */
+    font-family: 'Century Gothic', sans-serif;
+    z-index: 100;
+}
+
+nav .title{
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #caf0f8;
+}
+
+nav ul {
+    display: flex;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #caf0f8;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover{
+    text-shadow: 0px 0px 15px #ffd700;
+    color: #90e0ef;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+
+}
+
